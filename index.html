@@ -1,0 +1,99 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<!-- saved from url=(0047)https://www.di.ens.fr/willow/research/sdfilter/ -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	
+	<title type="font-size: 10px;">SFNet: Learning Object-aware Semantic Flow</title>
+	<meta name="author" content="Bumsub Ham">
+	<link rel="stylesheet" type="text/css" href="./SFNet_files/styles.css">
+	<link rel="stylesheet" type="text/css" href="./SFNet_files/thickbox.css" media="screen">
+    <script type="text/javascript" src="./SFNet_files/jquery.js" charset="utf-8"></script>
+    <script type="text/javascript" src="./SFNet_files/thickbox.js" charset="utf-8"></script>
+	<script type="text/javascript">                                         
+		$(document).ready(function() {
+			$(".script_show").show();
+			$(".script_hide").hide();
+			$(".bibtex").hide();
+			$(".abstract").hide();
+			//on page load call tb_init
+			tb_init('ul.figure > li > a');//pass where to apply thickbox
+			imgLoader = new Image(); // preload loading image
+			imgLoader.src = tb_pathToImage;
+			imgLoader2 = new Image(); // preload transparent background image
+			imgLoader2.src = 'images/macFFBgHack.png';
+		});
+	</script>
+</head>
+<body>
+	<div id="centerwrap">
+	<div id="innerwrap">
+		<div id="head">
+			<h1>SFNet: Learning Object-aware Semantic Flow</h1>
+			<h3>Junghyup Lee*, Dohyung Kim*, Bumsub Ham</h3>
+			<div align="right"><h5>* Both authors contributed equally to this work</h5></div>
+		</div>
+		<div class="hr"><!-- --></div>
+		<div id="content">
+
+				<table>
+				<tbody><tr><td><img src="./SFNet_files/teaser.png" width="700"></td></tr>
+				</tbody></table>
+				<div align="center"><b>Figure 1. A teaser of SFNet for training and test stages.</b></div><br>
+
+				<h2>Paper</h2>
+				<a target="_blank" href=""><img src="./SFNet_files/thb.png" class="pdfthumb" width="8%"></a>
+				<div class="pub">
+					<a class="pub_author">J. Lee, D. Kim, B. Ham</a><br>
+					<a class="pub_title">SFNet: Learning Object-aware Semantic Flow</a><br>
+					<a class="pub_location">Proceedings of the IEEE Conference on Computer Vision and Pattern Recognition (2019) </a><br>
+					<a target="_blank" href="" class="pub_link">PDF</a> |
+                    <span class="script_show" style="display: inline;">
+                        <a class="pub_link" href="" onclick="$(&#39;#sfnet_abstract&#39;).slideUp(&#39;fast&#39;); $(&#39;#sfnet2019_abstract&#39;).slideToggle(&#39;fast&#39;); return false;">Abstract</a> |
+                        <a class="pub_link" href="" onclick="$(&#39;#sfnet_bibtex&#39;).slideUp(&#39;fast&#39;); $(&#39;#sfnet2019_bibtex&#39;).slideToggle(&#39;fast&#39;); return false;">BibTeX</a> |
+                    </span>
+                    <a target="_blank" href="" class="pub_link">Supplementary Material</a>
+
+
+					<div id="sfnet2019_abstract" class="abstract" style="display: none;"><h4 class="script_hide" style="display: none;">Abstract</h4>
+					We address the problem of semantic correspondence, that is, establishing a dense flow field between images depicting different instances of the same object or scene category. We propose to use images annotated with binary foreground masks and subjected to synthetic geometric deformations to train a convolutional neural network (CNN) for this task. Using these masks as part of the supervisory signal offers a good compromise between semantic flow methods, where the amount of training data is limited by the cost of manually selecting point correspondences, and semantic alignment ones, where the regression of a single global geometric transformation between images may be sensitive to image-specific details such as background clutter. We propose a new CNN architecture, dubbed SFNet, which implements this idea. It leverages a new and differentiable version of the argmax function for end-to-end training, with a loss that combines mask and flow consistency with smoothness terms. Experimental results demonstrate the effectiveness of our approach, which significantly outperforms the state of the art on standard benchmarks.                  </div>
+					<div id="sfnet2019_bibtex" class="bibtex" style="display: none;"><h4 class="script_hide" style="display: none;">BibTeX</h4>
+					<pre>@InProceedings{lee2019,
+author = {Junghyup Lee and Dohyung Kim and Bumsub Ham},
+title = {SFNet: Learning Object-aware Semantic Flow},
+booktitle = {Proceedings of the IEEE Conference on Computer Vision and Pattern Recognition},
+year = {2019}
+}
+					</pre>
+					</div>
+				</div>
+				<br>
+
+
+	
+
+
+
+
+				<h2>Code</h2>
+                <a><img src="./SFNet_files/datathumb.png" height="70" class="datathumb"></a>
+				<!-- <a href="http://www.di.ens.fr/willow/research/sdfilter/sdfilter_release_v1.zip"><img src="./images/datathumb.png" height="70" class="datathumb"></a>-->
+				<div class="pub"> 
+				<a class="pub_title">SFNet</a><br>
+				<a class="pub_location">Our train and test code.</a><br>
+                <a href="https://github.com/cvlab-yonsei">GitHub page</a>
+				</div>
+                
+		</div>
+		<br>
+		<div id="content">
+            
+				<h2>Acknowledgements</h2> 
+				<br> <br>
+		</div>
+		<div id="foot"><p>Last updated: Feb 2019</p></div>
+	</div>
+	</div>
+	
+	
+
+
+<div style="background-color: rgb(255, 143, 0); display: none; color: white; text-align: center; position: fixed; top: 0px; left: 0px; width: 100%; height: auto; min-width: 100%; min-height: auto; max-width: 100%; font: 12px &quot;Helvetica Neue&quot;, Helvetica, Arial, Geneva, sans-serif; cursor: pointer; padding: 5px;"><span style="color: white; font: 12px &quot;Helvetica Neue&quot;, Helvetica, Arial, Geneva, sans-serif;">문단 재생기가 꺼져 있습니다. 옵션 페이지에서 다시 켤 수 있습니다.</span><img src="chrome-extension://gfjopfpjmkcfgjpogepmdjmcnihfpokn/img/icons/icon-close_16.png" style="width: 20px; height: auto; min-width: 20px; min-height: auto; max-width: 20px; float: right; margin-right: 10px;"></div></body></html>

@@ -29,7 +29,6 @@ body {
   line-height: 40px;
   padding-bottom: 19px;
   font-size: 40px;
-  font-family: 'Baloo', cursive;
 }
 .header h4 {
   font-family: 'Shojumaru', cursive;
@@ -66,13 +65,11 @@ body {
 
 .row p + h3 {
   margin-top: 28px;
-  font-family: 'Righteous', cursive;
 }
 
 div.row h3 {
   padding-bottom: 5px;
   border-bottom: 1px solid #ccc;
-  font-family: 'Righteous', cursive;
 }
 
 /* Responsive: Portrait tablets and up */
